@@ -1,0 +1,1 @@
+document.addEventListener("click",function(e){var a=e.target.closest("[data-goal]");if(!a)return;var id=document.documentElement.innerHTML.match(/ym\((\d+),/);if(id&&window.ym)window.ym(Number(id[1]),"reachGoal",a.dataset.goal);});
